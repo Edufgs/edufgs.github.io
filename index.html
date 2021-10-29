@@ -14,6 +14,9 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
+    <!-- Icone que fica na janela do navegador chamado de "favicon" -->
+    <link rel="icon" href="img/computador.png">
+
     <title>Coisas Aleatórias</title>
   </head>
   <body>
@@ -22,7 +25,7 @@
     <header>
       <!-- classe navbar só diz que é uma barra de navegação -->
       <!-- classe navbar-expand- <tamanho tela> navegação de expansão dependendo do tamanho da tela (xl, md e sm) -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
         <!-- Classe navbar-brand é uma formatação para logo -->
           <a href="#" class="navbar-brand">
@@ -45,25 +48,23 @@
               <!-- nav-item = Diz que é os itens da navbar -->
               <li class="nav-item">
                 <!-- nav-link = diz que é um link da navbar -->
-                <a href="" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
                 <!-- nav-link = diz que é um link da navbar -->
-                <a href="" class="nav-link">Recursos</a>
+                <a href="" class="nav-link">Sites</a>
               </li>
               <li class="nav-item">
                 <!-- nav-link = diz que é um link da navbar -->
-                <a href="" class="nav-link">Beneficios</a>
+                <a href="" class="nav-link">Aplicativos</a>
               </li>
               <li class="nav-item">
                 <!-- nav-link = diz que é um link da navbar -->
-                <a href="" class="nav-link">Preços</a>
+                <a href="" class="nav-link">Sobre</a>
               </li>
               <li class="nav-item">
-                <!-- btn = Vira um botão padrão, sem ele fica feio -->
-                <!-- btn-outline-light = Botoes com contorno light -->
-                <!-- ml-4 = Adiciona um espaçamento nivel 4 -->
-                <a href="" class="btn btn-outline-dark ml-4">Entrar</a>
+                <!-- nav-link = diz que é um link da navbar -->
+                <a href="" class="nav-link">Outros</a>
               </li>
             </ul>
           </div>
@@ -85,7 +86,7 @@
               <!-- classe display deixa um maior destaque do que a classe h1 -->
               <h1 class="display-4">Tudo aqui é aleatório</h1>
               <p>
-                Todas as coisas postada neste site é aleatório, vai ser colocado tudo que eu tiver vontade de colocar.
+                Todas as coisas postada neste site é aleatório.
               </p>
 
               <!-- Local de um formulario -->
@@ -104,24 +105,13 @@
                 </div>
               </form>
 
-              <p>
-                Disponível para
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-android fa-lg"></i>
-                </a>
-
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-apple fab-lg"></i>
-                </a>
-              </p>
-
             </div>
           </div> <!-- Fim textos da seção -->
 
           <!-- d-none = retira a imagem -->
           <!-- d-md-block = Quando for uma tela md, é utilizado a imagem em formato block -->
-          <div class="col-md-6 d-none d-md-block">
-            <img src="img/capa-mulher.png">
+          <div class="col-md-6 d-none d-md-block mt-5">
+            <img src="img/capa.png" width="700">
           </div>
         </div>
       </div>
@@ -133,16 +123,16 @@
           <!-- Vai ocupar na tela md para cima 6 colunas -->
           <div class="col-md-6 d-flex">
             <div class="align-self-center">
-              <h2>Saiba para onde vai o seu dinhero</h2>
+              <h2>Saiba o que é esse site</h2>
               <p>
-                Com o Finans, você categoriza todos os seus lançamento. Com gráficos simples, você sabe de onde vem e para onde vai seu dinheiro.
+                Esse site serve para testar as habilidades de programação web do criador.
               </p>
               <a href="" class="btn btn-primary">Veja mais</a>
             </div>
           </div>
           <div class="col-md-6">
             <!-- No bootstrap é bom usar uma imagem grande e depois usar uma classe responsivo -->
-            <img src="img/saiba.png" class="img-fluid">
+            <img src="img/code.jpg" class="img-fluid">
           </div>    
         </div>
       </div>
@@ -153,14 +143,14 @@
         <div class="row">
           <div class="col-md-6">
             <!-- No bootstrap é bom usar uma imagem grande e depois usar uma classe responsivo -->
-            <img src="img/juros.png" class="img-fluid">
+            <img src="img/gif.gif" class="img-fluid" width="200">
           </div>
           <!-- Vai ocupar na tela md para cima 6 colunas -->
           <div class="col-md-6 d-flex">
             <div class="align-self-center">
-              <h2>Pare de pagar juros e economize</h2>
+              <h2>Coisas aleatório</h2>
               <p>
-                Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!
+                Aqui terá muitas coisas aleatórias pois postarei o que sentir vontade.
               </p>
               <a href="" class="btn btn-primary">Veja mais</a>
             </div>
@@ -198,33 +188,34 @@
     </section><!-- Fim seção resursos -->
 
     <!-- Rodapé -->
-    <footer mt-4 mb-4>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-8">
             <p>
               <a href="">Home</a>
-              <a href="">Recursos</a>
-              <a href="">Benefícios</a>
-              <a href="">Preços</a>
+              <a href="">Sites</a>
+              <a href="">Aplicativos</a>
+              <a href="">Sobre</a>
+              <a href="">Outros</a>
             </p>
           </div>
           <!-- d-flex = converte para um container flexbox -->
           <!-- justify-content-end = alinha a direita -->
           <div class="col-md-4 d-flex justify-content-end">
-            <a href="" class="btn btn-outline-dark ml-2">
+            <a href="https://www.facebook.com/profile.php?id=100003276924397" class="btn btn-outline-dark ml-2">
               <i class="fab fa-facebook fab-lg"></i>
             </a>
 
-            <a href="" class="btn btn-outline-dark ml-2">
+            <a href="https://twitter.com/Edu_G_Silva" class="btn btn-outline-dark ml-2">
               <i class="fab fa-twitter fab-lg"></i>
             </a>
 
-            <a href="" class="btn btn-outline-dark ml-2">
+            <a href="https://www.instagram.com/edu_gon_silva/" class="btn btn-outline-dark ml-2">
               <i class="fab fa-instagram fab-lg"></i>
             </a>
 
-            <a href="" class="btn btn-outline-dark ml-2">
+            <a href="https://www.youtube.com/channel/UCqQPtmiVCX4bDb6HFwHibyw" class="btn btn-outline-dark ml-2">
               <i class="fab fa-youtube fab-lg"></i>
             </a>
           </div>
