@@ -1,9 +1,23 @@
-body {
-    overflow-x:hidden;
+body{
+	font-family: Helvetica, Arial,sans-serif;
+	overflow-x: hidden; /*tira a barra de rolagem horizontal*/
 }
+
 #home{
-	background: url(../img/fundo-home.jpg);
+	background: url(../img/fundo.jpg) repeat;
+	text-shadow: 1px 1px 50px black, 0 0 1em black, 0 0 1em black;
 	color: white;
+}
+
+.desfoque{
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 30%; /*Arredonda os cantos usando prefix no Chrome e Safari*/
+	-moz-border-radius: 30%; /*Arredonda os cantos usando prefix no Firefox*/
+	border-radius: 30%; /*Arredonda os cantos usado para outros de versões mais novas de navegadores*/
+
+	-webkit-box-shadow: 0 0 0.5em black; /*sombras de caixa usando prefix no Chrome e Safari*/
+	-moz-box-shadow: 0 0 0.5em black; /*sobras de caixa usando prefix no Firefox*/
+	box-shadow: 0 0 0.5em black; /*sobras de caixa usado para outros de versões mais novas de navegadores*/
 }
 
 .caixa{
@@ -22,25 +36,60 @@ p a{
 /* media queries
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px){
+	h1{
+		/* Como converter "pixel" em "em": site: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+		font-size: 2em;
+	}
 
+	p{
+		font-size: 1.1em;
+	}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
+	h1{
+		/* Como converter "pixel" em "em": site: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+		font-size: 3em;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
 }
 
 /*Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	
+	h1{
+		/* Como converter "pixel" em "em": site: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+		font-size: 3em;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	
+	h1{
+		/* Como converter "pixel" em "em": site: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+		font-size: 3.5em;
+	}
+
+	p{
+		font-size: 1.2em;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-	
+	h1{
+		/* Como converter "pixel" em "em": site: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+		font-size: 4em;
+	}
+
+	p{
+		font-size: 1.5em;
+	}
 }
