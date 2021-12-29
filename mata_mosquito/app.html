@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mata Mosquito</title>
+
+		<!-- Icone que fica na janela do navegador chamado de "favicon" -->
+    	<link rel="icon" href="imagens/mosquito.png">
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/javascript" src="jogo.js"></script>
+	</head>
+
+	<!-- onresize = acontece um evento toda vez que a tela é redimencionada -->
+	<body onresize="ajustaTamanhoPalcoJogo()">
+		<div class="painel">
+			<!-- Mostra as vidas-->
+			<div class="vidas">
+				<img id="v1" src="imagens/coracao_cheio.png">
+				<img id="v2" src="imagens/coracao_cheio.png">
+				<img id="v3" src="imagens/coracao_cheio.png">
+			</div>
+
+			<!-- Mostra o tempo para acabar-->
+			<div class="cronometro">
+				Tempo restante: <span id="cronometro"></span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			document.getElementById('cronometro').innerHTML = tempo
+			//Classe que executa a cada um tempo uma função
+			// setInterval(<acao>,1000)
+			//tempo em milisegundos
+			var criaMosquito = setInterval(function(){
+				posicaoRandomica()
+			},criaMosquitoTempo)
+
+		</script>
+	</body>
+
+</html>
