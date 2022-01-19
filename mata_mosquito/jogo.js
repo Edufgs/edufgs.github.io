@@ -8,8 +8,10 @@ var criaMosquitoTempo = 1500
 
 //Retira o caracte e substitui. Então retira o '?' e substitui por ''
 nivel = nivel.replace('?','')
-
-if(nivel === 'normal'){
+if(nivel === 'facil'){
+	//2 segundos
+	criaMosquitoTempo = 2000
+}else if(nivel === 'normal'){
 	//1,5 segundos
 	criaMosquitoTempo = 1500
 }else if(nivel == 'dificil'){
